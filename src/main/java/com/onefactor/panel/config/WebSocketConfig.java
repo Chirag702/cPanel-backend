@@ -19,6 +19,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // Use allowedOriginPatterns to specify allowed origins
-        registry.addEndpoint("/ws").setAllowedOriginPatterns("http://localhost:3000").withSockJS();
+        registry.addEndpoint("/ws").setAllowedOriginPatterns("https://cpanel.onefactor.in").withSockJS();
     }
 }
